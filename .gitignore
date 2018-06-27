@@ -20,4 +20,4 @@ conf/nginx_common.conf
 conf/nginx.conf
 conf/uwsgi.ini
 __pycache__
-
+geckodriver.log
