@@ -17,7 +17,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_get_title(self):
         self.driver.get('http://127.0.0.1:8000')
-        self.assertIn('Django', self.driver.title)
+        self.assertIn('DGIS', self.driver.title)
         self.fail('Finish the test')
 
 
