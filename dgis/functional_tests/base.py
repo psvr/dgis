@@ -17,7 +17,10 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_get_title(self):
         self.driver.get('http://127.0.0.1:8000')
+        # DGIS in title and header
         self.assertIn('DGIS', self.driver.title)
+        header_text = self.driver.find_element_by_tag_name('h1').text
+        self.assertIn('DGIS', header_text)
         self.fail('Finish the test')
 
 
